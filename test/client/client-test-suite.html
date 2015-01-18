@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../node_modules/mocha/mocha.css" />
+</head>
+<body>
+<div id="mocha"></div>
+<script src="../../node_modules/mocha/mocha.js"></script>
+<script src="../../node_modules/chai/chai.js"></script>
+<script>
+    debugger;
+    var expect = chai.expect;
+    mocha.setup({
+        ui: 'bdd',
+        ignoreLeaks: true
+    });
+    onload = function () {
+        mocha.run();
+    };
+</script>
+<script src="../../client-generator.js"></script> <!-- Include source -->
+<script src="clientTests.js"></script>
+</body>
+</html>
